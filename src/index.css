@@ -15,3 +15,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.button {
+  color: white;
+  background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 0.4rem;
+  border-radius: 15px;
+  border: 0.07rem solid hsl(136, 65%, 51%);
+  transition: 0.2s !important;
+  
+}

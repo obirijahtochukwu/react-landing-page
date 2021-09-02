@@ -1,6 +1,6 @@
 /* MOBILE VIEW */
 @media screen and (max-width: 700px) {
-  .navbar {
+  .desktop {
     display: none;
   }
 }
@@ -102,14 +102,19 @@
 }
 .navbar-link {
   color: rgba(0, 0, 0, 0.5);
-  font-size: medium;
+  font-size: small;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   padding-right: 1rem;
+  transition: 0.5s ease-in-out;
 }
-
-
+.navbar-link:hover {
+  color: hsl(136, 65%, 51%);
+  font-size: large;
+  font-weight: 900;
+  text-shadow: 2px 2px 3px;
+}
 
 
 
