@@ -33,7 +33,7 @@ export default function Sidebar() {
             const {id, url, text} = link;
             return (
               <div className="link">
-                <a href={url}>{text}</a>
+                <a href={url} className='a'>{text}</a>
               </div>
             )
           })}

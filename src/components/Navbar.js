@@ -5,14 +5,14 @@ import logo from '../images/logo.svg';
 
 export default function Navbar() {
  return (
-  <div className='navbar'>
+  <div className='n'>
    <div className="navbar">
     <img src={logo} alt="logo"/>
-    <span className="navbar-link">
+    <span>
      {links.map((link)=>{
       const {id, url, text } = link;
       return (
-       <a key={id} href={url}>{text}</a>
+       <a key={id} href={url} className='navbar-link'>{text}</a>
       )
      })}
     </span>
