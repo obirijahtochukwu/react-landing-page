@@ -32,7 +32,7 @@ export default function Sidebar() {
           {links.map((link)=>{
             const {id, url, text} = link;
             return (
-              <div className="link">
+              <div key={id} className="link">
                 <a href={url} className='a'>{text}</a>
               </div>
             )

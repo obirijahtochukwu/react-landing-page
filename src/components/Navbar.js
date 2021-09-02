@@ -5,7 +5,7 @@ import logo from '../images/logo.svg';
 
 export default function Navbar() {
  return (
-  <div className='n'>
+  <div className='desktop'>
    <div className="navbar">
     <img src={logo} alt="logo"/>
     <span>

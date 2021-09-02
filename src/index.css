@@ -11,6 +11,10 @@ body {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 1rem !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -20,6 +24,7 @@ code {
   color: white;
   background: linear-gradient(90deg, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
   padding: 0.4rem;
+  text-transform: capitalize;
   border-radius: 15px;
   border: 0.07rem solid hsl(136, 65%, 51%);
   transition: 0.2s !important;
