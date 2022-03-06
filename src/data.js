@@ -1,28 +1,32 @@
 const links = [
  {
   id: 1,
-  url: '/',
+  url: '#',
   text: 'home',
  },
  {
   id: 2,
-  url: '/about',
-  text: 'about',
+  url: '#services',
+  bookmark: '#services',
+  text: 'services',
  },
  {
   id: 3,
-  url: '/contact',
-  text: 'contact',
+  url: '#features',
+  bookmark: '#features',
+  text: 'features',
  },
  {
   id: 4,
-  url: '/blog',
-  text: 'blog',
+  url: '#products',
+  bookmark: '#products',
+  text: 'products',
  },
  {
   id: 5,
-  url: '/carears',
-  text: 'carears',
+  url: '#reviews',
+  bookmark: '#reviews',
+  text: 'reviews',
  },
 ]
 
