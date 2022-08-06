@@ -1,0 +1,14 @@
+.App {
+ text-align: center;
+}
+#BarChart {
+ display: flex;
+ flex-direction: row;
+ align-items: flex-end;
+ justify-content: center;
+ margin: 50px;
+}
+.bar {
+ background-color: #3aa70f;
+ width: 10px;
+}
