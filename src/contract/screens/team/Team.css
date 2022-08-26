@@ -1,0 +1,53 @@
+.overflow-hidden-d {
+  overflow: hidden;
+}
+
+.img-team {
+ border-radius: 15px;
+ transition: all 0.5s ease-in-out;
+ cursor: pointer;
+} 
+.img-team:hover {
+  transform: scale(0.9);
+}
+
+.team-name {
+  left: 1rem;
+  bottom: 1rem;
+  font-weight: 800;
+  background: linear-gradient(139deg, #ec9228, #b547f9);
+  background-position: 100%;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 1rem;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.team-name.show {
+  opacity: 1;
+}
+
+.d-team-container {
+  height: 86vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.desktop-team {
+  width: 130vw;
+  transform: rotate(-8deg);
+  animation: hover 2s ease-in-out infinite alternate;
+}
+@keyframes hover {
+  0%{
+    transform: rotate(-8deg) translate(-20%, -15%);
+  }
+  50%{
+    transform: rotate(-8deg) translate(-18%, -15%);
+  }
+  100%{
+    transform: rotate(-8deg) translate(-20%, -10%);
+  }
+}

@@ -1,14 +1,38 @@
-.App {
- text-align: center;
+.svg-container {
+  width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);
 }
-#BarChart {
- display: flex;
- flex-direction: row;
- align-items: flex-end;
- justify-content: center;
- margin: 50px;
+.png0 {
+  animation: png0 2s ease-in-out infinite alternate;
 }
-.bar {
- background-color: #3aa70f;
- width: 10px;
+@keyframes png0 {
+  0%{
+    transform: matrix(0.9072231078147888, 0, 0, 1, 99.53121948242188, 407.97900390625);
+  }
+  100%{
+    transform: matrix(1, 0, 0, 1, 90.53121948242188, 407.97900390625);
+  }
 }
+.png1 {
+  animation: png1 3s ease-in-out infinite alternate;
+}
+@keyframes png1 {
+  0%{
+    transform: matrix(0.8010277080535889, 0, 0, 1, 744.757080078125, 221);
+  }
+  100%{
+    transform: matrix(0.8510277080535889, 0, 0, 1, 744.757080078125, 221);
+  }
+}
+
+.png2 {
+  animation: png2 2s ease-in-out infinite alternate;
+}
+@keyframes png2 {
+  0%{
+    transform: matrix(0.9072231078147888, 0, 0, 1, 423.4871826171875, 141.38201904296875);
+  }
+  100%{
+    transform: matrix(0.9672231078147888, 0, 0, 1, 426.4871826171875, 141.38201904296875);
+  }
+}
+

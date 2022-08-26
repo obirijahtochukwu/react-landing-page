@@ -1,0 +1,41 @@
+.news-img {
+ cursor: pointer;
+ transition: all 0.3s ease-in-out;
+ border-radius: 15px !important;
+}
+.news-img:hover {
+ transform: scale(0.9);
+}
+.d-news  {
+ height: 40hv;
+ overflow-y: hidden;
+ overflow-x: hidden;
+ position: relative;
+}
+.desktop-news {
+ width: 120vw;
+ transition: all 2s ease-in-out;
+ transform: translate(-32%);
+}
+.desktop-news.up {
+ transform: translate(-6%);
+}
+
+.news-bar {
+ position: absolute;
+ top: 12rem;
+ z-index: -1;
+ padding: 0.1rem;
+ width: 100%;
+ height: 0.2rem;
+ background-color: palevioletred;
+}
+
+.desktop-news-img {
+ border-radius: 15px;
+ transition: all 0.5s ease-in-out;
+}
+
+.desktop-news-img:hover {
+ transform: rotate(-10deg) scale(0.9);
+}

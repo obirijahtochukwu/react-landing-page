@@ -1,0 +1,82 @@
+.semi-container {
+ height: 30rem;
+ overflow-y: hidden;
+ overflow-x: hidden;
+}
+
+.semi-circle-img {
+ transform: translate(-18%, 20%);
+ width: 150vw;
+ animation: semi 10s ease-in-out infinite alternate;
+}
+
+@keyframes semi {
+  0% {
+    transform: translate(-18%, 20%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-18%, 20%) rotate(360deg);
+  }
+}
+
+@media (min-width: 992px) {
+  .semi-container {
+    height: 40rem;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+ .semi-circle-img {
+   width: 150vw;
+   animation: semi-2 10s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes semi-2 {
+  0% {
+    transform:  translate(-18%, 6%) rotate(0deg);
+  }
+
+  100% {
+    transform:  translate(-18%, 6%) rotate(360deg);
+  }
+}
+
+.semi-text {
+  position: absolute;
+  z-index: 1;
+  top: -8rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table {
+  border-top: 0.1rem solid rgb(255, 255, 255, 0.3);
+}
+
+table, th, td {
+  border-bottom: 0.1rem solid rgb(255, 255, 255, 0.3);
+}
+
+th {
+  font-size: 1.2rem;
+  color: white;
+  font-family: courier;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+td {
+  color: rgb(255, 255, 255, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.05rem;
+}

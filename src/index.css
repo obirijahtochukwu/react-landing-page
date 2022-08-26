@@ -8,9 +8,17 @@ body {
   background-color: lavender;
   margin: 0;
   width: 100%;
+  display: block;
+}
+
+* {
+  
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none !important;
+}
 p {
   font-size: 1rem !important;
 }
@@ -29,4 +37,12 @@ code {
   border: 0.07rem solid hsl(136, 65%, 51%);
   transition: 0.2s !important;
   
+}
+
+.image-text {
+  background-position: 200px, 20px;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
