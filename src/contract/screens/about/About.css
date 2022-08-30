@@ -73,10 +73,39 @@ th {
 }
 
 td {
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.7);
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 0.5rem;
   font-size: 1.05rem;
   letter-spacing: 0.05rem;
+}
+
+.vertical-timeline::before {
+  background: linear-gradient(139deg, #ec9228, #b547f9) !important;
+}
+
+.timeline-icon {
+  color: white;
+  background: linear-gradient(139deg, #ec9228, #b547f9) !important;
+}
+
+.timeline-text {
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.timeline-img {
+  z-index: 1;
+  transform: translateY(8%);
+  border-radius: 25px;
+}
+
+.sub {
+  position: absolute;
+  top: 0;
+  transform: translate(-150%);
+}
+
+.overflow-auto::-webkit-scrollbar {
+  display: none;
 }

@@ -8,10 +8,9 @@ export default function Navbar() {
   const [sidebar, setSidebar] = React.useState(false);
 
   const links = [
-    {text: 'home', url: '/', id: 1},
-    {text: 'the dao', url: '', id: 2},
-    {text: 'adopt a cat', url: '', id: 3},
-    {text: 'dao elements', url: '', id: 4},
+    {text: 'home', url: '#home', id: 1},
+    {text: 'the dao', url: '#dao', id: 2},
+    {text: 'adopt a cat', url: '#cat', id: 3},
   ];
 
   const urls = [
@@ -22,16 +21,18 @@ export default function Navbar() {
   ];
 
   return (
-    <div className='navbar container-fluid py-3 px-5 d-none d-md-block'>
+    <div id='dao' className='navbar container-fluid py-3 px-5 d-none d-md-block'>
       <div className="topbar">
         <div className='float-left'>
-          <img src="../../../logo.svg" alt="" />
+          <Link to='/' onClick={()=> setSidebar(false)}>
+            <img src="../../../logo.svg" alt="" />
+          </Link>
         </div>
         <div className="float-left d-flex align-items-center justify-content-">
-          {links.map(({text, id})=>{
+          {links.map(({text, id, url})=>{
             return (
               <div key={id} className='nav-link'>
-                {text}
+                <a href={url}>{text}</a>
               </div>
             )
           })}

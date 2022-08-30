@@ -53,7 +53,7 @@ export default function Home() {
         <div className="col-11 col-md-12 col-lg-6 mx-auto">
           <Ap/>
         </div>
-        <div className="row pt-3 d-lg-none px-5 p-md-0">
+        <div className="row pt-3 d-lg-none p-md-0">
             <div className='col-11 col-sm-5 mx-auto mb-4 mb-sm-0'>
               <div>
                 <FaPeriscope className='icon mb-3'/>
@@ -70,16 +70,16 @@ export default function Home() {
                 <FaStaylinked className='icon mb-3'/>
               </div>
               <h6 className='text-white'><b>On-chain Governanc</b></h6>
-              <p className="paragraphs">wnership of a Gutter Cat gives members the ability to vote on certain topics, such as community project initiatives and endeavors.</p>
+              <p className="paragraphs" id='dao'>wnership of a Gutter Cat gives members the ability to vote on certain topics, such as community project initiatives and endeavors.</p>
             </div>
           </div>
-      </div>
-      <hr />
+      </div >
+      <hr id='dao'/>
         <h1 className="title mt-5 pt-5 my-4 px-4 px-md-5">WHAT IS A <span style={{backgroundImage: 'url(../../../logo.svg) ,linear-gradient(139deg, #ec9228, #b547f9)'}} className="image-text">DAO</span>?</h1>
       <div className="row px-4 px-md-5 align-items-center">
         <div className="col-12 col-lg-6 mt-4">
         
-          <div style={{width: '15%'}}>
+          <div style={{width: '15%'}} className='my-3'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" preserveAspectRatio="xMidYMid meet"style={{width: '100%', height: '100%', transform: 'translate3d(0px, 0px, 0px)'}}>
             <defs>
               <clipPath id="__lottie_element_21">
@@ -98,7 +98,7 @@ export default function Home() {
             </g>
           </svg>
           </div>
-          <h1 className="sub-title">NEXT  STEP IN ORGANIZATIONAL STRUCTURE AND GOVERNANCE</h1>
+          <h1 className="sub-title" style={{wordBreak: 'break-word'}}>NEXT  STEP IN ORGANIZATIONAL STRUCTURE AND GOVERNANCE</h1>
           <div className="paragraphs">
             They allow for a decentralized, fair system of decision-making without any hierarchy or centralized power that control all aspects of an organization's operation from top to bottom.
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
         <div style={{backgroundImage: 'url(../../../logo13.png)'}} className='scroll-1 pb-0 mb-5'>scroll 1</div>
         <div style={{backgroundImage: 'url(../../../logo14.png)'}} className='scroll-2'>scroll 1</div>
       </div>
-      <hr />
+      <hr id='cat'/>
       <div className="row mx-auto text-center my-5">
         <div className="col-11 col-md-6 mx-auto my-3">
           <h4 className="sub-title my-3">CATS FOR <span style={{backgroundImage: 'url(../../../logo.svg) ,linear-gradient(139deg, #ec9228, #b547f9)'}} className="image-text">ADOPTION</span></h4>
@@ -238,11 +238,11 @@ export default function Home() {
         </div>
       </div>
       <hr />
-      <div style={{height: '100%'}} className="row px-3 my-5 py-4">
+      <div style={{height: '100%'}} className="row my-5 py-4">
         <div className="col-8 col-md-4 mb-3">
           <img src="../../../svg6.png" alt="" className="w-100 rounded align-self-start" />
         </div>
-        <div className="col-11 col-md-4 mt-4 align-self-center">
+        <div className="col-11 col-md-8 mt-4 align-self-center">
           <div className='align-self-center instagram-container d-none d-md-block text-center'>
             <p className='paragraphs mx-3'><b>Follow us on Instagram</b></p>
             <h1 className="title pt-0 mt-0 instagram"><a href='https://www.instagram.com/guttercatgang_/' className="image-text" style={{backgroundImage: 'url(../../../logo.svg) ,linear-gradient(139deg, #ec9228, #b547f9)'}} >INSTAGRAM</a></h1>
@@ -254,7 +254,7 @@ export default function Home() {
           <div className='align-self-end position-relative'>
             <img src="../../../svg7.png" alt="" className="w-100 rounded" />
             <a href="https://www.instagram.com/guttercatgang_/">
-              <img src="../../../logo21.png" alt="" className="w-25 position-absolute top-0 start-100 translate-middle border border-light rounded-circle" />
+              <img src="../../../logo21.png" alt="" className="w-25 position-absolute top-0 translate-middle border border-light rounded-circle" />
             </a>
           </div>
         </div>
@@ -263,7 +263,7 @@ export default function Home() {
       <hr />
       <div className="row my-5 py-5">
         <div className="col-11 col-md-9 col-lg-6">
-          <h6 className='text-white mx-3'><b>Have a unique idea you want to pitch to the DAO?</b></h6>
+          <h6 className='timeline-text'><b>Have a unique idea you want to pitch to the DAO?</b></h6>
           <h1 className="title mt-0 pb-0">
             <span style={{backgroundImage: 'url(../../../logo.svg) ,linear-gradient(139deg, #ec9228, #b547f9)'}} className="image-text">GET IN TOUCH</span>
           </h1>

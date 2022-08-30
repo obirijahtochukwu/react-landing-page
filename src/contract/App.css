@@ -254,3 +254,8 @@ body {
   cursor: pointer;
   color: #e8eaed !important;
 }
+
+footer {
+  background-color: rgba(1, 35, 66, 0.6);
+  border-radius: 25px;
+}

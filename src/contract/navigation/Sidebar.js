@@ -18,7 +18,9 @@ export default function Sidebar() {
     <div className='container-fluid mobile-nav py-3 d-md-none'>
       <div className="d-flex justify-content-between align-items-center px-2">
         <div>
-          <img src="../../../logo.svg" alt="" />
+          <Link to='/' onClick={()=> setSidebar(false)}>
+            <img src="../../../logo.svg" alt="" />
+          </Link>
         </div>
         <div onClick={()=> setSidebar(!sidebar)} style={{backgroundImage: 'url(../../../bar.svg)', backgroundColor: 'transparent', backgroundSize: 'cover'}}>
           <FaAlignRight style={{fontSize: '1.5rem', cursor: 'pointer'}} className='text-white m-3'/>

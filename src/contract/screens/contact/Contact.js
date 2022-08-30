@@ -70,7 +70,7 @@ export default function Contact() {
             }
             return null;
           })}
-          <button onClick={()=> forward()} className=" position-fixed btn-proposal w-75 py-3" disabled={proposalIndex === 4 && true}>continue</button>
+          <button onClick={()=> forward()} className=" position-fixed btn-proposal w-75 py-3" disabled={proposalIndex === 4 && true}>{proposalIndex === 4 ? 'complete submission' : 'next step' }</button>
         </div>
         <div className="col-12">
           <div className="d-flex justify-content-between align-items-center my-4">

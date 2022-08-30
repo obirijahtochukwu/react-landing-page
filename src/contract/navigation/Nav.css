@@ -1,10 +1,13 @@
 /* MOBILE NAVBAR */
+a { color: unset !important;}
+
 .mobile-nav {
  background-color: #0c1f30;
  position: sticky;
  top: 0;
  width: 100%;
  z-index: 9998;
+  border-bottom: 0.01rem outset rgb(232, 234, 237, 0.5);
 }
 
 .sidebar {
@@ -16,9 +19,15 @@
  left: 0;
  background-color: #0c1f30;
  visibility: hidden;
+ overflow-y: auto;
  transform: translate(-100%);
  transition:  0.3s;
  opacity: 0;
+}
+@media (min-width: 992px) {
+  .sidebar {
+    top: 15%;
+  }
 }
 
 .sidebar.show {
@@ -76,6 +85,7 @@
   right: 0;
   left: 0;
   z-index: 999;
+  background-color: #0c1f30;
   border-bottom: 0.01rem outset rgb(232, 234, 237, 0.5);
 }
 .topbar {
