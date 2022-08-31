@@ -1,0 +1,103 @@
+.navbar {
+ position: sticky;
+ top: 0;
+ right: 0;
+ left: 0;
+ z-index: 1;
+ background-color: var(--primary-color);
+ border-radius: 0 0 15px 0;
+ transition: 0.5s;
+}
+
+.navbar div {
+ margin-bottom: 0.1rem;
+ border-radius: 0 0 15px 15px;
+}
+
+.logo {
+ cursor: pointer;
+ font-family: cursive;
+ font-size: 1.5rem;
+ font-weight: 900;
+ color: var(--primary-color);
+ text-transform: capitalize;
+}
+.nav-icon {
+ cursor: pointer;
+ color: red;
+ font-size: 1.8rem;
+}
+
+.sidebar {
+ position: fixed;
+ top: 4.5rem;
+ left: 0;
+ width: 30%;
+ bottom: 0;
+}
+@media (min-width: 992px) {
+ .sidebar {
+  width: 20%;
+ }
+}
+.sidebar-content::-webkit-scrollbar{
+  display: none;
+}
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto;
+  border-radius: 0 15px 25px 0 !important;
+  background-color: var(--primary-color) !important;
+}
+
+.active {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.sidebar-link {
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  border-radius: 0 !important;
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-link:hover {
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.profile-icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.sidebar-icon {
+  font-size: 1.4rem;
+}
+
+.bold-text {
+  font-weight: var(--weight);
+}
+.subtext {
+  color: rgb(255, 255, 255, 0.9);
+  font-size: 1rem !important;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.logout-btn {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: 0.15rem solid rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  text-transform: capitalize;
+  transition: all 0.4s ease-in-out;
+}
+.logout-btn:hover {
+  color: var(--primary-color);
+  background-color: white;
+  box-shadow: 0 0 3px 5px rgb(255, 255, 255, 0.6);
+}

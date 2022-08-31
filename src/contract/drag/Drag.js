@@ -1,19 +1,18 @@
 import React, {useState, useEffect, useRef} from 'react'
-const mugu ={
-  transform: 'scale(0.2)'
-}
+
 export default function Drag() {
 
-  const [pos, setPos] = useState({x: 0, y: 0});
-  const [pre, setPre] = useState(false)
+  const [position, setPos] = useState({x: 0, y: 0});
+  const [pressed, setPressed] = useState(false)
+  const [mugu, setMugu] = useState('');
   const ref = useRef(null);
 
     const onMouseMove = (e)=>{
-      if (pre) {
+      if (pressed) {
         setPos({
 
-          x: pos.x + e.movementX,
-          y: pos.y + e.movementY
+          x: position.x + e.movementX,
+          y: position.y + e.movementY
         })
       }
     }
@@ -21,14 +20,15 @@ export default function Drag() {
 
   useEffect(() => {
     if (ref.current) {
-        ref.current.style.transform = `translate(${pos.x}px, ${pos.y}px)`
+      setMugu(()=>  `translate(${position.x}px, ${position.y}px)`)
+        console.log(mugu)
       }
-  }, [pos])
+  }, [position, mugu])
   
 
   return (
     <div>
-      <img ref={ref} onMouseMove={onMouseMove} onMouseDown={()=> setPre(true)} onMouseUp={()=> setPre(false)} style={mugu} src="../../../a8.png" className='w-25' alt="" />
+      <img ref={ref} onMouseMove={onMouseMove} onMouseDown={()=> setPressed(true)} onMouseUp={()=> setPressed(false)} style={{transform: mugu}} src="../../../a8.png" className='w-25' alt="" />
     </div>
   )
 }
